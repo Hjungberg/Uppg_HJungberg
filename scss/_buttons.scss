@@ -1,0 +1,120 @@
+
+.btn {
+  font-size: 0.9rem;
+  padding: .6em 1.8em;
+  display: flex;
+  
+  text-wrap: nowrap;
+  gap: .5rem;
+  border-radius: var(--br-m);
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+
+  img {
+    height: 1.5em;
+  }
+}
+
+
+.btn-round {
+  display: flex;
+  width: 50px;
+  height: 50px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.btn-white {
+  background-color: var(--clr-white-to-gray);
+  color: var(--clr-navigation-text);
+
+  box-shadow: 0 0 10px 10px #00000022, 3px 5px 5pc #00000033;
+
+  &:hover,
+  &:focus-visible {
+    background-color: hsl(from var(--clr-white-to-gray) h s calc(l - 10));
+  }
+
+}
+.btn-blue {
+  background-color: var(--clr-primary);
+  color: var(--clr-white-to-gray);
+
+  box-shadow: 0 0 10px 10px #00000022, 3px 5px 5pc #00000033;
+
+  &:hover,
+  &:focus-visible {
+    background-color: hsl(from var(--clr-white-to-gray) h s calc(l - 10));
+  }
+
+}
+
+.btn-primary {
+  background-color: var(--clr-primary);
+  color: #fff;
+
+  transition: background-color 150ms;
+
+  &:hover,
+  &:focus-visible {
+    background-color: hsl(from var(--clr-primary) h s calc(l - 10));
+  }
+}
+
+
+// darkmode toggle
+
+
+.toggle {
+  --_w: 46px;
+  --_h: 24px;
+
+  position: relative;
+  flex-shrink: 0;
+  width: var(--_w);
+  height: var(--_h);
+  display: inline-block;
+
+  input[type="checkbox"] {
+    width: 0;
+    height: 0;
+    opacity: 0;
+
+  }
+
+  .slider {
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr-grey-600);
+    border-radius: 100vw;
+  }
+
+  .slider::after {
+    position: absolute;
+    content: '';
+    top: 2px;
+    left: 2px;
+    height: calc(100% - 4px);
+    aspect-ratio: 1;
+    border-radius: 50%;
+    background-color: #fff;
+
+    transition: all 250ms;
+  }
+
+  input[type="checkbox"]:checked~.slider::after {
+    left: calc(100% - var(--_h) + 2px);
+  }
+
+  input[type="checkbox"]:checked~.slider {
+    background-color: var(--clr-primary);
+  }
+}

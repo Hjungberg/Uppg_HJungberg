@@ -1,0 +1,71 @@
+.newsletter {
+  padding-top: 6rem;
+  padding: 2rem;
+  background-color: var(--clr-bg);
+  background-image: linear-gradient(to top, rgba(99, 101, 241, 0.10), rgba(219, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+}
+.newsletter-row {
+  display: flex;
+  width: 80lvw;
+  justify-content: space-evenly;
+  gap: 5rem;
+  img {
+    width: 50px;
+    height: 50px;
+  }
+  @media (width < 992px) {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.sub-text {
+  display: flex;
+  padding: 0;
+  line-height: 1;
+  gap: 1rem;
+}
+
+.input-group {
+  display: flex;
+
+  .form-input {
+    border-radius: .5em 0 0 .5em;
+  }
+  .btn {
+    border-radius:  0 .5em .5em 0;
+    background-color: var(--clr-primary);
+    color: var(--clr-bg);
+    height: 50px;
+    align-items: center;
+  }
+  
+  
+}
+.newsletter-small {
+  @media (width <=992px) {
+    display: none;
+  }
+}
+.form-input {
+  border: 1px solid #333;
+  padding: .3em;
+  font-size: 1rem;
+  border-radius: .5em;
+  width: 400px;
+  height: 50px;
+}
+
+.email {
+  padding-left: 2rem;
+  background-image: url('/images/bx-envelope.svg');
+  background-repeat: no-repeat;
+  background-position: 10px 50%;
+
+}
+
+.icon {
+  position: relative;
+  top: 50%;
+  left: .5rem;
+}

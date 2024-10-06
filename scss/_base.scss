@@ -1,0 +1,29 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/* darkmode */
+html {
+  color-scheme: light;
+}
+
+body {
+  font-family: "Manrop", sans-serif;
+  line-height: 1.8;
+  background-color: var(--clr-bg);
+  color: var(--clr-text-body);
+}
+
+img,
+svg {
+  display: block;
+  width: 100%;
+}
+
+.showlight { display: block;}
+.showdark {display: none;}

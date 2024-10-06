@@ -1,0 +1,32 @@
+.reviews {
+  background-color: var(--clr-bg);
+  background-image: linear-gradient(to top, rgba(99, 101, 241, 0.10), rgba(219, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
+  
+  @media (width < 1200px) {
+    display: none;
+  }
+
+}
+.clients {
+  display: flex;
+  flex-basis: 33%;
+  justify-content: left;
+  gap: 2rem;
+  
+}
+.client-cards {
+  width: 30%;
+  padding: 1rem;
+}
+
+.client-img1{
+  width: 10%;
+  
+}
+.client-img2{
+  width: 30%;
+}
+.client-img3{
+  width: 60%;
+}
+

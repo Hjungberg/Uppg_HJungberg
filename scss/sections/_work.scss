@@ -1,0 +1,26 @@
+
+.carousel-section {
+  padding: var(--section-spacing);
+  background-color: var(--clr-bg-100);
+  text-align: center;
+
+  .carousel {
+    display: flex;
+    justify-content: space-evenly;
+    
+  }
+
+  .text {
+    max-width: 600px;
+    margin-inline: auto;
+
+  }
+
+  .carousel-item:first-of-type,
+  .carousel-item:last-of-type {
+    @media (width < 768px){
+      display: none;
+    }
+  }
+
+} 
