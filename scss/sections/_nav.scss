@@ -1,10 +1,8 @@
- 
 .main-nav {
   padding-block: 1rem;
   position: absolute;
   width: 100%;
   top: 0;
-
 
   .skip-link {
     padding: 1rem;
@@ -30,8 +28,6 @@
   .main-menu {
     display: flex;
     align-items: center;
-    
-
   }
 
   .darkmode-toggle {
@@ -39,20 +35,18 @@
     right: 13rem;
     display: flex;
     align-items: center;
-
   }
 
   .menu-btn {
     display: none;
     background-color: transparent;
     border: 0;
-    padding: .5rem;
+    padding: 0.5rem;
     cursor: pointer;
     padding-right: 0;
     position: absolute;
     right: 1rem;
     z-index: 9999;
-    
   }
 
   p {
@@ -65,7 +59,6 @@
     width: 100%;
     justify-content: space-between;
     margin-left: 3rem;
-
   }
 
   .nav-link {
@@ -77,16 +70,12 @@
     &:focus-visible {
       color: var(--clr-primary);
       background-color: var(--clr-bg);
-
     }
   }
-
 
   @media (width <=992px) {
     .menu-btn {
       display: block;
-      
-
     }
 
     .container {
@@ -107,14 +96,11 @@
       padding-block: 2rem;
       box-shadow: 0 5px 5px #00000028;
       background-color: var(--clr-bg);
-
-
     }
 
     .nav-link {
       display: inline-block;
       padding: 1rem;
-      
     }
 
     .hide {
@@ -122,13 +108,12 @@
     }
 
     .menu-btn[aria-expanded="true"] ~ .main-menu {
-      animation: openMenu 250ms forwards
+      animation: openMenu 250ms forwards;
     }
 
     .menu-btn[aria-expanded="false"] ~ .main-menu {
-      animation: closeMenu 250ms forwards
+      animation: closeMenu 250ms forwards;
     }
-
   }
   @media (width < 540px) {
     .darkmode-toggle {
@@ -144,9 +129,6 @@
       clip: rect(0, 0, 0, 0);
       white-space: nowrap;
       border-width: 0;
-
     }
-    
   }
-
 }

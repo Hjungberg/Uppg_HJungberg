@@ -1,11 +1,13 @@
-
-  
 .showcase {
   padding-top: 6rem;
   text-align: center;
   background-color: var(--clr-bg);
-  background-image: linear-gradient(to top, rgba(99, 101, 241, 0.10), rgba(219, 70, 239, 0.05) 42%, rgba(241, 244, 253, 0.07) 83%);
-
+  background-image: linear-gradient(
+    to top,
+    rgba(99, 101, 241, 0.1),
+    rgba(219, 70, 239, 0.05) 42%,
+    rgba(241, 244, 253, 0.07) 83%
+  );
 
   .content {
     padding-bottom: 3rem;
@@ -18,7 +20,6 @@
   }
 
   .store-btn {
-    
     background-color: var(--clr-market-btn);
     width: 100%;
     padding: 0.5em 1em;
@@ -26,9 +27,7 @@
     img {
       height: 3em;
     }
-
   }
-
 
   .more {
     display: flex;
@@ -48,15 +47,11 @@
     .container {
       position: relative;
       /* display: inline-block; */
-      
-  
     }
     .content {
       width: 45%;
       text-align: start;
       margin-top: 6rem;
-
-
     }
     .store-btn {
       padding: 0 1em;
@@ -75,12 +70,9 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      
     }
   }
   @media (width > 992px) {
-
-
     .store-btn {
       padding: 0.3em 2em;
     }
@@ -91,7 +83,6 @@
   @media (width > 1200px) {
     padding-top: 10rem;
     text-align: start;
-
 
     h1 {
       width: 50%;

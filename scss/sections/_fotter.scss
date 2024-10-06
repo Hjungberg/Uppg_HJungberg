@@ -1,18 +1,15 @@
-
-.footer { 
+.footer {
   font-size: 14px;
-    padding-top: 6rem;
-    padding-bottom: 2rem;
-    color: var(--clr-grey-600);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: .5rem;
-    flex-direction: column;
-  
+  padding-top: 6rem;
+  padding-bottom: 2rem;
+  color: var(--clr-grey-600);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  flex-direction: column;
+
   @media (width > 768px) {
     flex-direction: row;
-
   }
- 
 }

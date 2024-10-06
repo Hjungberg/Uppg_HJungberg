@@ -7,7 +7,6 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-
   }
   .logo-card {
     width: 100%;
@@ -24,17 +23,14 @@
     .logo-card:nth-last-of-type(-n + 2) {
       display: none;
     }
-
   }
   @media (width > 1200px) {
     .container {
       grid-template-columns: repeat(6, 1fr);
-
     }
     .logo-card:nth-last-of-type(-n + 2) {
       display: block;
     }
-
   }
 }
 
@@ -49,15 +45,12 @@
   .features-grid {
     display: grid;
     gap: 2rem;
-
-
   }
   .features-card {
     display: flex;
     align-items: flex-start;
     text-align: start;
     gap: 1rem;
-
   }
 
   .icon-container {
@@ -82,7 +75,6 @@
 
     .iphone {
       display: block;
-
     }
     .features-grid {
       grid-template-columns: repeat(2, 1fr);
@@ -97,5 +89,4 @@
       gap: 10rem;
     }
   }
-
 }
